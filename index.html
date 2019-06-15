@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Simple calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Calculator!</h1>
+    <p id="creator">Created by Mark Bekooy</p>
+  
+    <form>
+      <div class="row align-items-center basic-calculations">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label>Value 1:</label>
+            <input type="number" class="form-control" id="value1" placeholder="First value">
+          </div>
+          <div class="form-group">
+            <label>Value 2:</label>
+            <input type="number" class="form-control" id="value2" placeholder="Second value">
+          </div>
+          <div class="form-group">
+            <label>Operator:</label>
+            <select class="form-control" id="basic-operator">
+              <option value="Addition">Addition</option>
+              <option value="Subtraction">Subtraction</option>
+              <option value="Multiplication">Multiplication</option>
+              <option value="Division">Division</option>
+              <option value="Modulo">Modulo</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-primary" id="basicCalculation">Calculate</button>
+          <div class="basicCalculationOutput"></div>
+        </div>
+      </div>
+    </form>
+  
+    <form>
+      <div class="row align-items-center statistical-calculation">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label>List of values:</label>
+            <input type="text" class="form-control" id="valuesForStatistics" placeholder="List of values">
+          </div>
+          <div class="form-group">
+            <label>Analysis method:</label>
+            <select class="form-control" id="analysis-operator">
+              <option value="Standard Deviation">Standard Deviation</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <input type="button" class="btn btn-primary" id="statisticsCalculation" value="Calculate"><br>
+          <div class="statisticsCalculationOutput"></div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="./calculator.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

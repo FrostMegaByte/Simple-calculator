@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  font-size: 4.5em !important;
+}
+
+#creator {
+  text-align: center;
+}
+
+.basic-calculations {
+  background-color: firebrick;
+}
+
+.statistical-calculation {
+  background-color: orchid;
+}
